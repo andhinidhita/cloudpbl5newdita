@@ -7,80 +7,87 @@
 </head>
 <body>
     <div class="container">
-    <h2>Login</h2>
-    <form action="/auth/login" method="POST">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-    </form>
-  
-    <p>Belum punya akun? <a href="/register">Daftar di sini</a></p>
-</div>
+        <h2>Login</h2>
+        <form action="/auth/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Belum punya akun? <a href="/register">Daftar di sini</a></p>
+    </div>
 </body>
 
-
 <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F3E5F5; /* Ungu muda */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #E3F2FD; /* Biru muda */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        text-align: center;
+    }
 
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-            
-        }
+    h2 {
+        color: #6A0DAD; /* Ungu tua */
+    }
 
-        h2 {
-            color: #0277BD; /* Biru lebih gelap */
-        }
-        input {
-    width: 100%;
-    padding: 10px;
-    padding-left: 12px; /* Tambahkan padding kiri */
-    margin: 10px 0;
-    border: 1px solid #219bff;
-    border-radius: 5px;
-    box-sizing: border-box; /* Agar padding tidak menambah ukuran input */
-}
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #6A0DAD;
+        border-radius: 5px;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 16px;
+    }
 
+    input:focus {
+        border-color: #4B0082; /* Ungu gelap */
+        box-shadow: 0 0 8px rgba(106, 13, 173, 0.5);
+    }
 
-        button {
-            background-color: #0288D1; /* Biru muda */
-            color: white;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    button {
+        background-color: #6A0DAD; /* Ungu tua */
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
 
-        button:hover {
-            background-color: #0277BD;
-        }
+    button:hover {
+        background-color: #4B0082; /* Ungu gelap */
+    }
 
-        p {
-            margin-top: 10px;
-        }
+    p {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #6A0DAD;
+    }
 
-        a {
-            color: #0288D1;
-            text-decoration: none;
-        }
+    a {
+        color: #6A0DAD;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    a:hover {
+        text-decoration: underline;
+        color: #4B0082;
+    }
 </style>
 </html>
